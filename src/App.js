@@ -55,7 +55,6 @@ export class App extends Component {
    handleEdit = id => {
       const filteredItems = this.state.items.filter(item => item.id !== id);
       const selectedItem = this.state.items.find(item => item.id === id);
-      console.log(selectedItem.title);
 
       this.setState({
          items: filteredItems,
